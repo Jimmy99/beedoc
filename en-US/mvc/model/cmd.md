@@ -5,7 +5,7 @@ sort: 9
 
 # Command Line
 
-You can call `orm.RunCommand()` after you registered models and database(s) as follows:
+You can call `orm.RunCommand()` after you have registered models and database(s) as follows:
 
 ```go
 func main() {
@@ -19,7 +19,7 @@ func main() {
 ```bash
 go build main.go
 ./main orm
-# Get help by just run it.
+# Get help by just running it.
 # If possible, go run main.go orm has the same result.
 ```
 
@@ -58,7 +58,7 @@ if err != nil {
 }
 ```
 
-Even if you do not enable `force` mode, ORM also will auto-add new fields and indexes, but you have to deal with delete operations yourself.
+Even if you do not enable `force` mode, ORM  will also auto-add new fields and indexes, but you have to deal with delete operations yourself.
 
 ## Print SQL Statements
 
