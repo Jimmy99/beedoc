@@ -5,7 +5,7 @@ sort: 7
 
 # Transaction
 
-ORM has the basic transaction support
+ORM supports basic transaction implementation
 
 ```go
 o := NewOrm()
@@ -13,7 +13,7 @@ err := o.Begin()
 // transaction process
 ...
 ...
-// All the query which are using o Ormer in this process are in the transaction
+// All the queries which use o Ormer in this process are included the transaction
 if SomeError {
 	err = o.Rollback()
 } else {
